@@ -5,7 +5,7 @@ import java.time.Month;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Employee extends Salary{
+public class Employee extends Salary, Spouse {
 
 	private enum Gender {
 		LAKI_LAKI,
@@ -22,11 +22,7 @@ public class Employee extends Salary{
 	private boolean isForeigner;
     private Gender gender; 
 
-	private String spouseName;
-	private String spouseIdNumber;
-
-	private List<String> childNames;
-	private List<String> childIdNumbers;
+	private List<Child> child;
 
 	public Employee(String employeeId, String fullName, Address address, Gender gender) {
 		this.employeeId = employeeId;
@@ -44,14 +40,8 @@ public class Employee extends Salary{
 		this.joinDate = joinDate;
 	}
 
-	public void setSpouse(String spouseName, String spouseIdNumber) {
-		this.spouseName = spouseName;
-		this.spouseIdNumber = idNumber;
-	}
-
 	public void addChild(String childName, String childIdNumber) {
-		childNames.add(childName);
-		childIdNumbers.add(childIdNumber);
+		this.child.add(new Child(childNames, childIdNumbers));
 	}
 	
 }
