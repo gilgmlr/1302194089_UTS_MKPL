@@ -2,14 +2,12 @@ package lib;
 
 public class Address {
 	
-
 	private String kampung;
 	private String desa;
 	private String kecamatan;
-	private String kabupaten;
-	private String provinsi;
+	private String kota;
 
-	public Address(String kampung String desa, String kecamatan, String kabupaten, String provinsi;){
+	public Address(String kampung String desa, String kecamatan, String kota){
 		this.kampung = kampung;
 		this.desa = desa;
 		this.kecamatan = kecamatan;
