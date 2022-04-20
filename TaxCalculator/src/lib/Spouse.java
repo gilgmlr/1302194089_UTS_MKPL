@@ -1,6 +1,7 @@
 package lib;
 
 public class Spouse {
+	private boolean isMarried;
 	private String spouseName;
 	private String spouseIdNumber;
 
@@ -23,5 +24,13 @@ public class Spouse {
 
 	public String getSpouseName(){
 		return this.spouseName;
+	}
+
+	public void setIsMarried(boolean isMarried) {
+		this.isMarried = isMarried;
+	}
+
+	public String getIsMarried(){
+		return this.isMarried;
 	}
 }
