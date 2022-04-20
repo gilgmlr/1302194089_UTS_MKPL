@@ -24,7 +24,7 @@ public class Employee {
 	private int monthWorkingInYear;
 	
 	private boolean isForeigner;
-	private Gender gender; //true = Laki-laki, false = Perempuan
+	private Gender gender; 
 	
 	private int monthlySalary;
 	private int otherMonthlyIncome;
