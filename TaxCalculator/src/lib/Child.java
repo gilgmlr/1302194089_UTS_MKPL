@@ -1,6 +1,7 @@
 package lib;
 
 public class Child {
+
 	private String childName;
 	private String childIdNumber;
 
@@ -13,7 +14,7 @@ public class Child {
 		this.childIdNumber = childIdNumber;
 	}
 
-	public String getChildIdNumber(){
+	public String getChildIdNumber() {
 		return this.childIdNumber;
 	}
 
@@ -21,7 +22,8 @@ public class Child {
 		this.childName = childName;
 	}
 
-	public String getChildName(){
+	public String getChildName() {
 		return this.childName;
 	}
+
 }

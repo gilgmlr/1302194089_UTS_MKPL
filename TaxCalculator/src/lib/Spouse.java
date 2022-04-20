@@ -1,6 +1,7 @@
 package lib;
 
 public class Spouse {
+
 	private String spouseName;
 	private String spouseIdNumber;
 
@@ -13,7 +14,7 @@ public class Spouse {
 		this.spouseIdNumber = spouseIdNumber;
 	}
 
-	public String getSpouseIdNumber(){
+	public String getSpouseIdNumber() {
 		return this.spouseIdNumber;
 	}
 
@@ -24,4 +25,5 @@ public class Spouse {
 	public String getSpouseName(){
 		return this.spouseName;
 	}
+
 }

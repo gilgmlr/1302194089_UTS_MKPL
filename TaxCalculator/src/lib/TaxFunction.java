@@ -15,7 +15,7 @@ public class TaxFunction {
 		return tax<0? 0 : tax;
 	}
 
-	public static void childrenNumbersMax(int numberOfChildren){
+	public static void childrenNumbersMax(int numberOfChildren) {
 		if (numberOfChildren > 3) {
 			numberOfChildren = 3;
 		}
@@ -27,7 +27,7 @@ public class TaxFunction {
 		}
 	}
 
-	public static int isMarried(boolean isMarried, int monthlySalary, int otherMonthlyIncome, int numberOfMonthWorking, int deductible, int numberOfChildren){
+	public static int isMarried(boolean isMarried, int monthlySalary, int otherMonthlyIncome, int numberOfMonthWorking, int deductible, int numberOfChildren) {
 		int tax;
 		if (isMarried) {
 			tax = (int) Math.round(0.05 * (((monthlySalary + otherMonthlyIncome) * numberOfMonthWorking) - deductible - (54000000 + 4500000 + (numberOfChildren * 1500000))));

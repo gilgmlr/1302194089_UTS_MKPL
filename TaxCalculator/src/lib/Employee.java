@@ -36,7 +36,7 @@ public class Employee extends Salary, Spouse, Child {
 		setJoinDate(LocalDate.now());
 	}
 
-	public void setJoinDate(LocalDate joinDate){
+	public void setJoinDate(LocalDate joinDate) {
 		this.joinDate = joinDate;
 	}
 

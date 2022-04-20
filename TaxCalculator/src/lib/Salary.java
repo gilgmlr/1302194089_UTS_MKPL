@@ -1,6 +1,7 @@
 package lib;
 
 public class Salary {
+
 	private int monthlySalary;
 	private int otherMonthlyIncome;
 	private int annualDeductible;
@@ -44,4 +45,5 @@ public class Salary {
 		return TaxFunction.calculateTax(monthlySalary, otherMonthlyIncome, monthWorkingInYear, annualDeductible,
 				spouseIdNumber.equals(""), childIdNumbers.size());
 	}
+	
 }
