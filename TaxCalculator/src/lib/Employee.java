@@ -14,7 +14,7 @@ public class Employee {
 
 	private String employeeId;
 	private String fullName;
-	private String address;
+	private Address address;
 	
 	private LocalDate joinDate;
 	private int monthWorkingInYear;
