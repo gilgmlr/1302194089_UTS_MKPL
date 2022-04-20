@@ -22,8 +22,7 @@ public class Employee extends Salary, Spouse {
 	private boolean isForeigner;
     private Gender gender; 
 
-	private List<String> childNames;
-	private List<String> childIdNumbers;
+	private List<Child> child;
 
 	public Employee(String employeeId, String fullName, Address address, Gender gender) {
 		this.employeeId = employeeId;
@@ -42,8 +41,7 @@ public class Employee extends Salary, Spouse {
 	}
 
 	public void addChild(String childName, String childIdNumber) {
-		childNames.add(childName);
-		childIdNumbers.add(childIdNumber);
+		this.child.add(new Child(childNames, childIdNumbers));
 	}
 	
 }
