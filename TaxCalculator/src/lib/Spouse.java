@@ -6,7 +6,7 @@ public class Spouse {
 
 	public void setSpouse(String spouseName, String spouseIdNumber) {
 		this.spouseName = spouseName;
-		this.spouseIdNumber = idNumber;
+		this.spouseIdNumber = spouseIdNumber;
 	}
 
 	public void setSpouseIdNumber(String spouseIdNumber) {
