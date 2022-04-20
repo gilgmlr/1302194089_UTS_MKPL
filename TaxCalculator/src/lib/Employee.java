@@ -28,17 +28,21 @@ public class Employee extends Salary{
 	private List<String> childNames;
 	private List<String> childIdNumbers;
 
-	public Employee(String employeeId, String fullName, Address address, LocalDate joinDate, boolean isForeigner, 
+	public Employee(String employeeId, String fullName, Address address, boolean isForeigner, 
 		Gender gender) {
 		this.employeeId = employeeId;
 		this.fullName = fullName;
 		this.address = address;
-		this.joinDate = joinDate;
 		this.isForeigner = isForeigner;
 		this.gender = gender;
 
 		childNames = new LinkedList<String>();
 		childIdNumbers = new LinkedList<String>();
+		setJoinDate(LocalDate.now());
+	}
+
+	public void setJoinDate(LocalDate joinDate){
+		this.joinDate = joinDate;
 	}
 
 	public void setSpouse(String spouseName, String spouseIdNumber) {
