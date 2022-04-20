@@ -5,7 +5,7 @@ import java.time.Month;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Employee extends Salary{
+public class Employee extends Salary, Spouse{
 
 	private enum Gender {
 		LAKI_LAKI,
