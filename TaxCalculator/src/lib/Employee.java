@@ -28,12 +28,11 @@ public class Employee extends Salary{
 	private List<String> childNames;
 	private List<String> childIdNumbers;
 
-	public Employee(String employeeId, String fullName, Address address, boolean isForeigner, 
-		Gender gender) {
+	public Employee(String employeeId, String fullName, Address address, Gender gender) {
 		this.employeeId = employeeId;
 		this.fullName = fullName;
 		this.address = address;
-		this.isForeigner = isForeigner;
+		this.isForeigner = address.getIsForeigner();
 		this.gender = gender;
 
 		childNames = new LinkedList<String>();
